@@ -49,6 +49,31 @@ class HBNBCommand(cmd.Cmd):
         "Review"
     }
 
+    def emptyline(self) -> bool:
+        """Do nothing if empty line is received"""
+        return super().emptyline()
+    
+    def default(self, line: str) -> None:
+        """Default behaviour for the cmd module"""
+        dict_args = {
+            "all": self.do_all,
+            "show": self.do_show,
+            "destroy": self.do_destroy,
+            "count": self.do_count,
+            "update": self.do_update
+        }
+        arg_match = re.search(r"\.", line)
+        if arg_match:
+            line_arg = [line[:arg_match.span()[0]], line[arg_match.span()[1]:]]
+            arg_match = re.search(r"\((.*?)\)", line_arg)
+            if arg_match is not None:
+                command = [line_arg[1][:arg_match.span()[0]], arg_match.group()[1:-1]]
+                if command[0] in dict_args.keys():
+                    trigger = "{} {}".format(line_arg[0], command[1])
+                    return dict_args[command[0]](trigger)
+        print("*** Unknown syntax: {}".format(line))
+        return super().default(line)
+
     def do_EOF(self, line):
         """EOF end of file signal"""
         return True
@@ -140,6 +165,17 @@ class HBNBCommand(cmd.Cmd):
                     obzect.append(obj.__str__())
             print(obzect)
     
+    def do_count(self, line):
+        """Retrieve the number of instances of a given class
+           Usage: count <class> or <class>.count()
+        """
+        line_arg = parser(line)
+        count = 0
+        for obj in storage.all().values():
+            if line_arg[0] == obj.__class__.__name__:
+                count = count + 1
+        print(count)
+
     def do_update(self, line):
         """Updates an instance based on the class name and id 
            by adding or updating attribute (save the change into the JSON file)
