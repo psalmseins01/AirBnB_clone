@@ -20,7 +20,7 @@ def parser(self, arg):
     """creates a dictionary from a list of strings"""
     curly_brace = re.search(r"\{(.*?)\}", arg)
     square_brackets = re.search(r"\[(.*?)\]", arg)
-    if curly_brace in None:
+    if curly_brace is None:
         if square_brackets is None:
             return [idx.strip(",") for idx in split(arg)]
         else:
