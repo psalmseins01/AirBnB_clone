@@ -6,6 +6,7 @@ from datetime import datetime
 
 time = "%Y-%m-%dT%H:%M:%S.%f"
 
+
 class BaseModel:
     """The BaseModel is the superclass"""
 
@@ -20,9 +21,11 @@ class BaseModel:
         """if kwargs:
             for k, v in kwargs.items():
                 if "created_at" == k:
-                    self.created_at = datetime.strftime(kwargs["created_at"], time)
+                    self.created_at =\
+                            datetime.strftime(kwargs["created_at"], time)
                 elif "updated_at" == k:
-                    self.updated_at = datetime.strftime(kwargs["upadated_at"], time)
+                    self.updated_at =\
+                            datetime.strftime(kwargs["upadated_at"], time)
                 else:
                     setattr(self, k, v)"""
         if kwargs:
@@ -44,11 +47,12 @@ class BaseModel:
             self.created_at = datetime.utcnow()
             self.updated_at = self.created_at
             storage.new(self)
-            
+
     def __str__(self) -> str:
         """String representation of the BaseModel class"""
-        return ("[{}] ({}) {}".format(__class__.__name__, self.id, self.__dict__))
-    
+        return ("[{}] ({})\
+                {}".format(__class__.__name__, self.id, self.__dict__))
+
     def save(self):
         """
         Instance method used to:
