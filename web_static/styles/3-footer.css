@@ -1,0 +1,14 @@
+/* Styles for the footer element */
+footer {
+    background-color: white; /* Set background color of the footer */
+    height: 60px; /* Set the height of the footer */
+    width: 100%; /* Take up the full width of its container */
+    border-top: 1px solid #CCCCCC; /* Add a top border */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: fixed; /* Position the footer relative to the viewport */
+    bottom: 0; /* Align the footer to the bottom of the viewport */
+}
+
