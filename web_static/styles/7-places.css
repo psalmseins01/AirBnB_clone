@@ -1,0 +1,28 @@
+/* Styles for the places container */
+.places {
+    font-size: 30px; /* Font size */
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for the h1 inside the places container */
+.places h1 {
+    width: 100%; /* Take up full width */
+    font-size: 30px; /* Font size */
+}
+
+/* Styles for article elements */
+article {
+    width: 390px; /* Set width */
+    padding: 20px; /* Set padding */
+    margin: 20px; /* Set margin */
+    border: 1px solid #FF5A5F; /* Border */
+    border-radius: 4px; /* Border radius */
+}
+
+/* Styles for h2 inside article elements */
+article h2 {
+    font-size: 30px; /* Font size */
+    text-align: center; /* Center text horizontally */
+}

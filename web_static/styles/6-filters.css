@@ -1,0 +1,105 @@
+/* Styles for the filters container */
+.filters {
+    background-color: white; /* Background color */
+    height: 70px; /* Height of the container */
+    border: 1px solid #DDDDDD; /* Border */
+    border-radius: 4px; /* Border radius */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center children vertically */
+    position: relative; /* Position relative for absolute positioning of children */
+}
+
+/* Styles for the buttons inside the filters container */
+.filters button {
+    font-size: 18px; /* Font size */
+    background-color: #FF5A5F; /* Background color */
+    color: #FFFFFF; /* Text color */
+    height: 48px; /* Height of the button */
+    width: 20%; /* Width of the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Border radius */
+    position: absolute; /* Position absolutely within the parent container */
+    right: 30px; /* Position from the right edge of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Hover effect for the buttons */
+.filters button:hover {
+    opacity: 0.9; /* Reduce opacity on hover */
+}
+
+/* Styles for the locations and amenities sections */
+.filters .locations, .filters .amenities {
+    height: 100%; /* Take up full height of parent */
+    width: 25%; /* Take up 25% of the width of the parent */
+    position: relative; /* Position relative for absolute positioning of children */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center children horizontally */
+    flex-direction: column; /* Arrange children vertically */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Additional styles for the locations section */
+.locations {
+    border-right: 1px solid #DDDDDD; /* Add a right border */
+}
+
+/* Styles for heading elements inside locations and amenities */
+.filters .locations h3, .filters .amenities h3 {
+    font-weight: 600; /* Bold font weight */
+    margin: 2px 20px; /* Set margins */
+}
+
+/* Additional styles for heading elements inside locations and amenities */
+.locations h4, .amenities h4 {
+    font-weight: 400; /* Normal font weight */
+    font-size: 14px; /* Font size */
+    margin: 2px 20px; /* Set margins */
+}
+
+/* Styles for popover elements */
+.popover {
+    display: none; /* Hide by default */
+    background-color: #FAFAFA; /* Background color */
+    border: 1px solid #DDDDDD; /* Border */
+    border-radius: 4px; /* Border radius */
+    position: absolute; /* Position absolutely */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%; /* Take up full width */
+    top: 100%; /* Position below the triggering element */
+    margin-top: 0; /* Reset margin */
+}
+
+/* Show popover on hover */
+div:hover > .popover {
+    display: block; /* Show popover on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Styles for popover heading */
+.popover h2 {
+    font-size: 16px; /* Font size */
+}
+
+/* Styles for popover list items */
+.popover li {
+    margin: 10px 0px 5px 0px; /* Set margins */
+    list-style: none; /* Remove bullet points */
+}
+
+/* Additional styles for locations list */
+.filters .locations ul {
+    padding: 0.5em 0 1em 1em; /* Set padding */
+}
+
+/* Additional styles for location list items */
+.filters .locations li {
+    margin: 0 0 0 5%; /* Set margins */
+    padding: 0.2em; /* Set padding */
+}
+
+/* Additional styles for amenities list */
+.filters .amenities ul {
+    padding: 2em 0 2em 3em; /* Set padding */
+}
+
