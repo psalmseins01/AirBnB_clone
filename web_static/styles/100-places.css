@@ -1,0 +1,157 @@
+/* Styles for the places container */
+.places {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for the h1 inside the places container */
+.places h1 {
+    width: 100%; /* Take up full width */
+    font-size: 30px; /* Font size */
+}
+
+/* Styles for article elements */
+article {
+    width: 390px; /* Set width */
+    padding: 20px; /* Set padding */
+    margin: 20px; /* Set margin */
+    border: 1px solid #FF5A5F; /* Border */
+    border-radius: 4px; /* Border radius */
+    position: relative; /* Position relative for absolute positioning of children */
+    z-index: -1; /* Place behind other elements */
+}
+
+/* Styles for h2 inside article elements */
+article > h2 {
+    font-size: 30px; /* Font size */
+    display: flex; /* Use flexbox layout */
+    text-align: center; /* Center text horizontally */
+    flex-direction: column; /* Arrange children vertically */
+    margin: 0; /* Reset margin */
+    padding-bottom: 10%; /* Add space at the bottom */
+}
+
+/* Styles for the price_by_night element */
+.price_by_night {
+    color: #FF5A5F; /* Text color */
+    border: 4px solid #FF5A5F; /* Border */
+    border-radius: 100%; /* Rounded border */
+    min-width: 60px; /* Minimum width */
+    height: 60px; /* Height */
+    font-size: 30px; /* Font size */
+    position: absolute; /* Position absolutely */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    top: 2%; /* Position from the top */
+    right: 7%; /* Position from the right */
+}
+
+/* Styles for the information container */
+.information {
+    height: 80px; /* Set height */
+    border-top: 1px solid #DDDDDD; /* Top border */
+    border-bottom: 1px solid #DDDDDD; /* Bottom border */
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for max_guest, number_rooms, and number_bathrooms */
+.max_guest, .number_rooms, .number_bathrooms {
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
+    background-position: center top; /* Position the background image */
+    line-height: 9em; /* Set line height */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Styles for max_guest */
+.max_guest {
+    background-image: url(../images/icon_group.png); /* Set background image */
+}
+
+/* Styles for number_rooms */
+.number_rooms {
+    background-image: url(../images/icon_bed.png); /* Set background image */
+}
+
+/* Styles for number_bathrooms */
+.number_bathrooms {
+    background-image: url(../images/icon_bath.png); /* Set background image */
+}
+
+/* Styles for user element */
+.user {
+    margin: 10px auto; /* Set margin */
+}
+
+/* Styles for amenities h2 inside places container */
+.places .amenities h2 {
+    padding: 5% 0 5% 0; /* Padding */
+    padding-bottom: 2%; /* Bottom padding */
+    border-bottom: 1px solid #DDDDDD; /* Bottom border */
+}
+
+/* Styles for ul inside amenities container */
+.places .amenities > ul {
+    list-style: none; /* Remove default list style */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for li inside ul in amenities container */
+.places .amenities > ul > li {
+    background-size: 20px; /* Background size */
+    padding-left: 25px; /* Left padding */
+    padding-bottom: 25px; /* Bottom padding */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    line-height: 25px; /* Set line height */
+}
+
+/* Styles for TV icon */
+.tv {
+    background-image: url(../images/icon_tv.png); /* Set background image */
+}
+
+/* Styles for WiFi icon */
+.wifi {
+    background-image: url(../images/icon_wifi.png); /* Set background image */
+}
+
+/* Styles for pets icon */
+.pets {
+    background-image: url(../images/icon_pets.png); /* Set background image */
+}
+
+/* Styles for reviews container */
+.reviews {
+    margin-bottom: 5%; /* Bottom margin */
+}
+
+/* Styles for ul inside reviews container */
+.places .reviews > ul {
+    list-style: none; /* Remove default list style */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for h3 inside li in reviews container */
+.places .reviews > ul > li > h3 {
+    margin-top: 0; /* Reset top margin */
+    padding-bottom: 0px; /* Reset bottom padding */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Styles for p inside li in reviews container */
+.places .reviews > ul > li > p {
+    padding-bottom: 5%; /* Bottom padding */
+    margin-top: 0px; /* Reset top margin */
+}
+
