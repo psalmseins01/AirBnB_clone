@@ -1,0 +1,9 @@
+#!/bin/bash
+git add .
+changes=$(git status --porcelain | awk '{print $2}')
+commit_message="Updated files:"
+for file in $changes; do
+  commit_message="$commit_message $file"
+done
+git commit -m "$commit_message"
+git push

@@ -1,0 +1,23 @@
+/* Set HTML and body height to 100% */
+html, body {
+    height: 100%;
+}
+
+/* Reset margin, padding, and set basic text styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848; /* Text color */
+    font-size: 14px; /* Base font size */
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font family */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children vertically */
+}
+
+/* Styles for the container element */
+.container {
+    max-width: 1000px; /* Set maximum width */
+    margin: 30px auto; /* Center container horizontally with 30px top and bottom margin */
+    width: 100%; /* Take up full width */
+    flex: 1 0 auto; /* Allow container to grow and shrink as needed */
+}

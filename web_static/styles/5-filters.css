@@ -1,0 +1,32 @@
+/* Hover effect for the buttons */
+.filters button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Styles for the locations and amenities sections */
+.locations, .amenities {
+    height: 100%; /* Take up full height of parent */
+    width: 25%; /* Take up 25% of the width of the parent */
+    position: relative; /* Position relative for absolute positioning of children */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center children horizontally */
+    flex-direction: column; /* Arrange children vertically */
+}
+
+/* Additional styles for the locations section */
+.locations {
+    border-right: 1px solid #DDDDDD; /* Add a right border */
+}
+
+/* Styles for heading elements inside locations and amenities */
+.locations h3, .amenities h3 {
+    font-weight: 600; /* Bold font weight */
+    margin: 2px 20px; /* Set margins */
+}
+
+/* Additional styles for heading elements inside locations and amenities */
+.locations h4, .amenities h4 {
+    font-weight: 400; /* Normal font weight */
+    font-size: 14px; /* Font size */
+    margin: 2px 20px; /* Set margins */
+}
