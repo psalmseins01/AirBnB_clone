@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Styles for the header element */
 header {
     height: 70px; /* Set the height of the header */
@@ -9,3 +10,16 @@ header {
     flex-shrink: 0; /* Prevent header from shrinking in a flex container */
 }
 
+=======
+/* Styles for the header element */
+header {
+    height: 70px; /* Set the height of the header */
+    width: 100%; /* Take up the full width of its container */
+    border-bottom: 1px solid #CCCCCC; /* Add a bottom border */
+    background: white url(../images/logo.png); /* Set background color and image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: 20px center; /* Position the background image */
+    flex-shrink: 0; /* Prevent header from shrinking in a flex container */
+}
+
+>>>>>>> ff708307496dc2c400b4059e2c9838593f63cb06

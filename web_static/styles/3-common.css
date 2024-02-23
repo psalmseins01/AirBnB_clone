@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Set HTML and body height to 100% */
 html, body {
     height: 100%;
@@ -21,3 +22,28 @@ body {
     max-width: 1000px; /* Set maximum width */
     flex: 1 0 auto; /* Allow container to grow and shrink as needed */
 }
+=======
+/* Set HTML and body height to 100% */
+html, body {
+    height: 100%;
+}
+
+/* Remove default margin, padding, and set text styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* Create a flex container */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+}
+
+/* Define styles for a container element */
+.container {
+    width: 100%; /* Take up full width of its parent */
+    max-width: 1000px; /* Set maximum width */
+    flex: 1 0 auto; /* Allow container to grow and shrink as needed */
+}
+>>>>>>> ff708307496dc2c400b4059e2c9838593f63cb06
